@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ======================================================================
+       SEO & META INFORMATION
+  ======================================================================= -->
+    <title>Product Catalog – Alpha Hardware &amp; Construction Ltd</title>
+    <meta
+      name="description"
+      content="Browse our complete catalog of certified construction materials, power tools, plumbing fixtures, electrical panels, fasteners, and safety gear."
+    />
+    <meta
+      name="keywords"
+      content="hardware products, power tools catalog, building materials prices, cement, rebar, PVC pipes, roofing sheets, fasteners"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Hardware &amp; Construction Products Catalog"
+    />
+    <meta
+      property="og:description"
+      content="Commercial hardware, building materials, tools, and contractor supplies."
+    />
+    <meta property="og:image" content="images/hero/hero-2.png" />
+
+    <link rel="icon" type="image/svg+xml" href="images/logo/company-logo.png" />
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div id="page-loader" aria-hidden="true">
+      <img
+        src="images/logo/company-logo.png"
+        alt="Company Logo"
+        style="height: 200px; width: auto"
+      />
+      <div class="loader-spinner"></div>
+      <p class="loader-text">Loading Products Catalog...</p>
+    </div>
+
+    <!-- STICKY HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a
+          href="index.html"
+          class="brand-link"
+          aria-label="Alpha Hardware Homepage"
+        >
+          <div class="brand">
+            <img
+              src="images/logo/company-logo.png"
+              alt="Apex Hardware &amp; Construction Supplies"
+              class="brand-logo-img"
+            />
+            <a href="index.html" class="brand-name"
+              >ALPHA HARDWARE AND <br />
+              CONSTRUCTION LTD.</a
+            >
+          </div>
+        </a>
+
+        <nav class="main-nav" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="products.html" class="nav-link active">Products</a>
+          <a href="showcase.html" class="nav-link">Showcase</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <!-- Search anchor on page -->
+          <a
+            href="#catalog-search-area"
+            class="icon-btn"
+            title="Search Catalog"
+            aria-label="Search Catalog"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+          </a>
+
+          <!-- Dark / Light Mode Switcher -->
+          <button
+            class="icon-btn theme-toggle-btn"
+            title="Toggle Theme"
+            aria-label="Toggle Dark and Light Mode"
+          >
+            <span class="theme-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+              </svg>
+            </span>
+          </button>
+
+          <a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a>
+
+          <!-- Mobile Menu Toggle -->
+          <button
+            class="menu-toggle"
+            aria-label="Open Mobile Menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" aria-label="Mobile Navigation">
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="products.html" class="mobile-nav-link"
+        >Products <span>→</span></a
+      >
+      <a href="showcase.html" class="mobile-nav-link"
+        >Showcase Room <span>→</span></a
+      >
+      <a href="services.html" class="mobile-nav-link"
+        >Services <span>→</span></a
+      >
+      <a href="about.html" class="mobile-nav-link">About Us <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link"
+        >Contact &amp; Quotes <span>→</span></a
+      >
+      <div
+        style="
+          margin-top: 12px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        "
+      >
+        <a href="contact.html" class="btn btn-primary" style="width: 100%"
+          >Request a Quote</a
+        >
+        <a
+          href="#"
+          class="btn btn-whatsapp btn-whatsapp-chat"
+          style="width: 100%"
+          >Chat on WhatsApp</a
+        >
+      </div>
+    </div>
+
+    <main>
+      <!-- PAGE HERO HEADER -->
+      <section
+        style="
+          background: #0f172a;
+          color: #ffffff;
+          padding: 56px 0;
+          border-bottom: 3px solid var(--color-accent);
+        "
+      >
+        <div class="container">
+          <span class="section-kicker" style="color: var(--color-accent)"
+            >COMPLETE PRODUCT INVENTORY</span
+          >
+          <h1
+            style="
+              font-size: clamp(2.2rem, 4vw, 3.2rem);
+              margin-bottom: 12px;
+              color: #ffffff;
+            "
+          >
+            PRODUCT CATALOG
+          </h1>
+          <p
+            style="
+              color: #cbd5e1;
+              max-width: 680px;
+              font-size: 1.1rem;
+              line-height: 1.6;
+            "
+          >
+            Explore commercial-grade construction supplies, tools, plumbing
+            systems, and electrical hardware. Use live search or category
+            filters to find exact materials.
+          </p>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+         11 & 12. PRODUCT SEARCH & FILTER CONTROLS
+    ==================================================================== -->
+      <section
+        class="section"
+        id="catalog-search-area"
+        style="padding-top: 40px"
+      >
+        <div class="container">
+          <!-- Category Buttons Bar (Quick Access) -->
+          <div
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              gap: 8px;
+              margin-bottom: 24px;
+            "
+          >
+            <button
+              class="btn btn-sm btn-outline category-filter-btn active"
+              data-category="All"
+            >
+              All Categories
+            </button>
+            <button
+              class="btn btn-sm btn-outline category-filter-btn"
+              data-category="Power Tools"
+            >
+              Power Tools
+            </button>
+            <button
+              class="btn btn-sm btn-outline category-filter-btn"
+              data-category="Building Materials"
+            >
+              Building Materials
+            </button>
+            <button
+              class="btn btn-sm btn-outline category-filter-btn"
+              data-category="Plumbing"
+            >
+              Plumbing
+            </button>
+            <button
+              class="btn btn-sm btn-outline category-filter-btn"
+              data-category="Electrical"
+            >
+              Electrical
+            </button>
+            <button
+              class="btn btn-sm btn-outline category-filter-btn"
+              data-category="Roofing"
+            >
+              Roofing
+            </button>
+            <button
+              class="btn btn-sm btn-outline category-filter-btn"
+              data-category="Hand Tools"
+            >
+              Hand Tools
+            </button>
+            <button
+              class="btn btn-sm btn-outline category-filter-btn"
+              data-category="Fasteners"
+            >
+              Fasteners
+            </button>
+            <button
+              class="btn btn-sm btn-outline category-filter-btn"
+              data-category="Safety Equipment"
+            >
+              Safety
+            </button>
+          </div>
+
+          <!-- Filter & Search Toolbar -->
+          <div class="filter-bar">
+            <!-- Live Text Search Input -->
+            <div class="search-input-wrap">
+              <span class="search-icon-inside">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="m21 21-4.3-4.3" />
+                </svg>
+              </span>
+              <input
+                type="text"
+                id="product-search-input"
+                class="search-input"
+                placeholder="Search products, materials, codes (e.g. cement, drill, pipe)..."
+                aria-label="Search products"
+              />
+            </div>
+
+            <!-- Secondary Filters & Sorters -->
+            <div class="filter-selects-wrap">
+              <!-- Category Dropdown -->
+              <select
+                id="category-filter-select"
+                class="filter-select"
+                aria-label="Filter by category"
+              >
+                <option value="All">All Categories</option>
+                <option value="Power Tools">Power Tools</option>
+                <option value="Building Materials">Building Materials</option>
+                <option value="Plumbing">Plumbing</option>
+                <option value="Electrical">Electrical</option>
+                <option value="Roofing">Roofing</option>
+                <option value="Hand Tools">Hand Tools</option>
+                <option value="Paint & Finishing">Paint &amp; Finishing</option>
+                <option value="Fasteners">Fasteners</option>
+                <option value="Safety Equipment">Safety Equipment</option>
+                <option value="Welding Equipment">Welding Equipment</option>
+              </select>
+
+              <!-- Availability Dropdown -->
+              <select
+                id="availability-filter-select"
+                class="filter-select"
+                aria-label="Filter by stock availability"
+              >
+                <option value="all">All Availability</option>
+                <option value="in-stock">In Stock Only</option>
+              </select>
+
+              <!-- Sort Dropdown -->
+              <select
+                id="sort-by-select"
+                class="filter-select"
+                aria-label="Sort products"
+              >
+                <option value="featured">Featured First</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="alpha">Alphabetical (A-Z)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Results Counter Indicator -->
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 24px;
+            "
+          >
+            <span
+              id="product-results-count"
+              style="
+                font-size: 0.9rem;
+                font-weight: 700;
+                color: var(--text-muted);
+              "
+            >
+              Showing products...
+            </span>
+            <a href="showcase.html" class="btn btn-outline btn-sm">
+              Switch to Virtual Showcase Room →
+            </a>
+          </div>
+
+          <!-- DYNAMIC PRODUCTS GRID -->
+          <div class="products-grid" id="products-catalog-grid">
+            <!-- Populated dynamically by js/products.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- BULK QUOTE CTA STRIP -->
+      <section
+        class="section-alt"
+        style="padding: 48px 0; border-top: 1px solid var(--border-color)"
+      >
+        <div
+          class="container"
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+          "
+        >
+          <div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 6px">
+              Need Wholesale Tonnage or a Custom Package?
+            </h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem">
+              Send us your architectural Bill of Quantities (BOQ) for wholesale
+              tier pricing.
+            </p>
+          </div>
+          <div style="display: flex; gap: 12px">
+            <a href="contact.html" class="btn btn-primary"
+              >Request Wholesale Quote</a
+            >
+            <a href="#" class="btn btn-whatsapp btn-whatsapp-chat"
+              >WhatsApp Sales</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand">
+              <img
+                src="images/logo/company-logo.png"
+                alt="Apex Hardware &amp; Construction Supplies"
+                class="brand-logo-img"
+                style="width: auto; height: 60px"
+              />
+              <a href="index.html" class="brand-name"
+                >ALPHA HARDWARE AND <br />
+                CONSTRUCTION LTD.</a
+              >
+            </div>
+            <p class="footer-brand-desc">
+              Certified construction materials, heavy power tools, plumbing
+              fixtures, and equipment delivered directly to your job site.
+            </p>
+            <div class="footer-social-links">
+              <a
+                href="#"
+                class="social-icon-link btn-whatsapp-chat"
+                title="Chat on WhatsApp"
+                aria-label="WhatsApp"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://facebook.com"
+                class="social-icon-link company-facebook-link"
+                title="Follow on Facebook"
+                aria-label="Facebook"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://tiktok.com"
+                class="social-icon-link company-tiktok-link"
+                title="Follow on TikTok"
+                aria-label="TikTok"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Quick Links</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="products.html" class="footer-link">Products</a></li>
+              <li>
+                <a href="showcase.html" class="footer-link"
+                  >The Showcase Room</a
+                >
+              </li>
+              <li><a href="services.html" class="footer-link">Services</a></li>
+              <li><a href="about.html" class="footer-link">About Us</a></li>
+              <li><a href="contact.html" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Departments</h4>
+            <ul class="footer-links-list">
+              <li>
+                <a
+                  href="products.html?category=Power%20Tools"
+                  class="footer-link"
+                  >Power Tools</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html?category=Building%20Materials"
+                  class="footer-link"
+                  >Building Materials</a
+                >
+              </li>
+              <li>
+                <a href="products.html?category=Plumbing" class="footer-link"
+                  >Plumbing &amp; Pipes</a
+                >
+              </li>
+              <li>
+                <a href="products.html?category=Electrical" class="footer-link"
+                  >Electrical Gear</a
+                >
+              </li>
+              <li>
+                <a href="products.html?category=Roofing" class="footer-link"
+                  >Roofing Systems</a
+                >
+              </li>
+              <li>
+                <a href="products.html?category=Fasteners" class="footer-link"
+                  >Fasteners &amp; Bolts</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Store &amp; Depot</h4>
+            <div class="footer-contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span class="company-address-text">Nankonge-Nsagu</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              <a href="tel:+18005550199" class="company-phone-text footer-link"
+                >+256752228866</a
+              >
+            </div>
+            <div class="footer-contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              <a
+                href="mailto:sales@apexhardware-supplies.com"
+                class="company-email-text footer-link"
+                >Alphahardware@gmail.com</a
+              >
+            </div>
+            <div class="footer-contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <span class="company-hours-text">7:00am</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <div>
+            © <span class="current-year">2026</span>
+            <span class="company-name-text"
+              >Alpha Hardware and construction Ltd.</span
+            >. All Rights Reserved.
+          </div>
+          <div style="display: flex; gap: 16px">
+            <a href="about.html" class="footer-link">Terms of Supply</a>
+            <a href="contact.html" class="footer-link">Support Desk</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FLOATING QUICK ACTIONS -->
+    <div class="floating-actions-dock">
+      <button
+        class="back-to-top-btn"
+        title="Back to Top"
+        aria-label="Back to Top"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+        >
+          <path d="m18 15-6-6-6 6" />
+        </svg>
+      </button>
+      <a
+        href="#"
+        class="floating-whatsapp-btn"
+        title="Chat on WhatsApp"
+        aria-label="Chat on WhatsApp"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <!-- PRODUCT DETAIL MODAL DIALOG -->
+    <div
+      class="modal-overlay"
+      id="product-detail-modal"
+      aria-hidden="true"
+      role="dialog"
+    >
+      <div class="modal-card">
+        <button
+          class="modal-close-btn"
+          id="modal-close-btn"
+          aria-label="Close Dialog"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+
+        <div class="modal-media-col">
+          <img
+            id="modal-product-img"
+            src=""
+            alt="Product Detail"
+            class="modal-main-img"
+          />
+        </div>
+
+        <div class="modal-info-col">
+          <div class="product-meta-row">
+            <span id="modal-product-category">Category</span>
+            <span aria-hidden="true">·</span>
+            <span id="modal-product-code">Code</span>
+          </div>
+
+          <h2
+            id="modal-product-title"
+            style="font-size: 1.5rem; margin-bottom: 8px"
+          >
+            Product Name
+          </h2>
+          <div
+            id="modal-product-price"
+            class="product-price tabular-nums"
+            style="font-size: 1.6rem; margin-bottom: 16px"
+          >
+            $0.00
+          </div>
+
+          <p
+            id="modal-product-desc"
+            style="
+              color: var(--text-muted);
+              font-size: 0.95rem;
+              line-height: 1.6;
+              margin-bottom: 20px;
+            "
+          >
+            Product full description...
+          </p>
+
+          <h4
+            style="
+              font-size: 0.9rem;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              margin-bottom: 8px;
+            "
+          >
+            Technical Specifications
+          </h4>
+          <ul
+            id="modal-product-specs"
+            style="list-style: none; margin-bottom: 20px"
+          >
+            <!-- Injected via JavaScript -->
+          </ul>
+
+          <h4
+            style="
+              font-size: 0.9rem;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              margin-bottom: 8px;
+            "
+          >
+            Packaging / Sizes
+          </h4>
+          <div id="modal-product-sizes" style="margin-bottom: 24px">
+            <!-- Injected via JavaScript -->
+          </div>
+
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 12px;
+              margin-top: auto;
+            "
+          >
+            <a id="modal-quote-cta" href="contact.html" class="btn btn-primary"
+              >Request Quote</a
+            >
+            <a
+              id="modal-whatsapp-cta"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-whatsapp"
+              >Ask on WhatsApp</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+  </body>
+</html>

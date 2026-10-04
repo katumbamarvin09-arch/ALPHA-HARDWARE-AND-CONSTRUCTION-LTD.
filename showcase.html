@@ -1,0 +1,1485 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ======================================================================
+       SEO & META INFORMATION
+  ======================================================================= -->
+    <title>
+      The Showcase Room – Virtual Hardware &amp; Equipment Showroom | Alpha
+      Hardware
+    </title>
+    <meta
+      name="description"
+      content="Step into The Showcase Room. Visually inspect certified construction supplies, heavy power tools, and electrical equipment in our virtual showroom."
+    />
+    <meta
+      name="keywords"
+      content="virtual hardware showroom, construction tools showcase, power equipment demo, contractor supplies showroom"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="The Showcase Room – Virtual Hardware Showroom"
+    />
+    <meta
+      property="og:description"
+      content="Interactive visual showcase of certified hardware and construction equipment."
+    />
+    <meta property="og:image" content="images/hero/hero-2.svg" />
+
+    <link rel="icon" type="image/svg+xml" href="images/logo/company-logo.svg" />
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div id="page-loader" aria-hidden="true">
+      <img
+        src="images/logo/company-logo.png"
+        alt="Company Logo"
+        style="height: 200px; width: auto"
+      />
+      <div class="loader-spinner"></div>
+      <p class="loader-text">Opening The Showcase Room...</p>
+    </div>
+
+    <!-- STICKY HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a
+          href="index.html"
+          class="brand-link"
+          aria-label="Alpha Hardware Homepage"
+        >
+          <div class="brand">
+            <img
+              src="images/logo/company-logo.png"
+              alt="Apex Hardware &amp; Construction Supplies"
+              class="brand-logo-img"
+            />
+            <a href="index.html" class="brand-name"
+              >ALPHA HARDWARE AND <br />
+              CONSTRUCTION LTD.</a
+            >
+          </div>
+        </a>
+
+        <nav class="main-nav" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="products.html" class="nav-link">Products</a>
+          <a href="showcase.html" class="nav-link active">Showcase</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a
+            href="products.html"
+            class="icon-btn"
+            title="Search Products"
+            aria-label="Search Products"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+          </a>
+
+          <button
+            class="icon-btn theme-toggle-btn"
+            title="Toggle Theme"
+            aria-label="Toggle Theme"
+          >
+            <span class="theme-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+              </svg>
+            </span>
+          </button>
+
+          <a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a>
+
+          <button
+            class="menu-toggle"
+            aria-label="Open Mobile Menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" aria-label="Mobile Navigation">
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="products.html" class="mobile-nav-link"
+        >Products <span>→</span></a
+      >
+      <a href="showcase.html" class="mobile-nav-link"
+        >Showcase Room <span>→</span></a
+      >
+      <a href="services.html" class="mobile-nav-link"
+        >Services <span>→</span></a
+      >
+      <a href="about.html" class="mobile-nav-link">About Us <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link"
+        >Contact &amp; Quotes <span>→</span></a
+      >
+      <div
+        style="
+          margin-top: 12px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        "
+      >
+        <a href="contact.html" class="btn btn-primary" style="width: 100%"
+          >Request a Quote</a
+        >
+        <a
+          href="#"
+          class="btn btn-whatsapp btn-whatsapp-chat"
+          style="width: 100%"
+          >Chat on WhatsApp</a
+        >
+      </div>
+    </div>
+
+    <main>
+      <!-- SHOWROOM INTRO BANNER -->
+      <section
+        style="
+          background: #0f172a;
+          color: #ffffff;
+          padding: 60px 0;
+          border-bottom: 3px solid var(--color-accent);
+        "
+      >
+        <div class="container">
+          <span class="section-kicker" style="color: var(--color-accent)"
+            >IMMERSIVE VIRTUAL DISPLAY</span
+          >
+          <h1
+            style="
+              font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+              margin-bottom: 12px;
+              color: #ffffff;
+            "
+          >
+            THE SHOWCASE ROOM
+          </h1>
+          <p
+            style="
+              color: #cbd5e1;
+              max-width: 720px;
+              font-size: 1.15rem;
+              line-height: 1.6;
+            "
+          >
+            Welcome to our virtual equipment showroom. Inspect key contractor
+            gear, compare package configurations, review verified
+            specifications, and request direct quotes via WhatsApp.
+          </p>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+         INTERACTIVE SHOWROOM STAGE (POWERED BY JS/SHOWCASE.JS)
+    ==================================================================== -->
+      <section
+        class="section"
+        id="showcase-room-stage"
+        aria-label="Virtual Showroom Stage"
+      >
+        <div class="container">
+          <div
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              align-items: baseline;
+              justify-content: space-between;
+              margin-bottom: 20px;
+            "
+          >
+            <div>
+              <span class="section-kicker">SPOTLIGHT BAY</span>
+              <h2 style="font-size: 1.8rem">INSPECTION STAGE</h2>
+            </div>
+            <span style="font-size: 0.85rem; color: var(--text-muted)"
+              >Select department bay below to swap equipment spotlight:</span
+            >
+          </div>
+
+          <!-- Department Tabs -->
+          <div class="showcase-dept-tabs" id="showcase-dept-tabs">
+            <!-- Injected via js/showcase.js -->
+          </div>
+
+          <!-- Stage Card with Two Columns: Media Stage & Technical Specs -->
+          <div class="showcase-stage-card">
+            <!-- Left: Big Media Viewport -->
+            <div class="showcase-stage-media">
+              <img
+                id="showcase-stage-img"
+                src="images/products/product-02.jpg"
+                alt="Showcase Equipment"
+                class="showcase-stage-img"
+              />
+              <div
+                style="
+                  position: absolute;
+                  bottom: 12px;
+                  left: 12px;
+                  background: rgba(15, 23, 42, 0.85);
+                  color: #fff;
+                  padding: 4px 10px;
+                  border-radius: 4px;
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  letter-spacing: 1px;
+                "
+              >
+                360° INSPECTED SPECIFICATION
+              </div>
+            </div>
+
+            <!-- Right: Technical Breakdown & Live Configuration -->
+            <div class="showcase-stage-info">
+              <div class="product-meta-row">
+                <span id="showcase-stage-category">Building Materials</span>
+                <span aria-hidden="true">·</span>
+                <span id="showcase-stage-code">APX-CEM-02</span>
+              </div>
+
+              <h3
+                id="showcase-stage-title"
+                style="font-size: 1.6rem; font-weight: 900; margin-bottom: 6px"
+              >
+                Hima Cement 42.5N
+              </h3>
+
+              <p
+                id="showcase-stage-tagline"
+                style="
+                  font-size: 0.95rem;
+                  color: var(--color-accent);
+                  font-weight: 700;
+                  margin-bottom: 16px;
+                "
+              >
+                Certified Structural Strength for Foundations
+              </p>
+
+              <h4
+                style="
+                  font-size: 0.85rem;
+                  text-transform: uppercase;
+                  letter-spacing: 1px;
+                  color: var(--text-muted);
+                  margin-bottom: 8px;
+                "
+              >
+                Key Engineering Advantages
+              </h4>
+              <ul class="showcase-spec-list" id="showcase-stage-specs">
+                <!-- Injected via js/showcase.js -->
+              </ul>
+
+              <h4
+                style="
+                  font-size: 0.85rem;
+                  text-transform: uppercase;
+                  letter-spacing: 1px;
+                  color: var(--text-muted);
+                  margin-bottom: 8px;
+                "
+              >
+                Select Supply Package
+              </h4>
+              <div
+                id="showcase-stage-packages"
+                style="display: flex; flex-wrap: wrap; margin-bottom: 20px"
+              >
+                <!-- Injected via js/showcase.js -->
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  align-items: baseline;
+                  gap: 16px;
+                  margin-bottom: 24px;
+                  border-top: 1px solid var(--border-color);
+                  padding-top: 16px;
+                "
+              >
+                <span
+                  style="
+                    font-size: 0.85rem;
+                    color: var(--text-muted);
+                    font-weight: 700;
+                    text-transform: uppercase;
+                  "
+                  >Estimated Unit Cost:</span
+                >
+                <span
+                  id="showcase-stage-price"
+                  class="product-price tabular-nums"
+                  style="font-size: 1.8rem"
+                  >Shs.30000</span
+                >
+              </div>
+
+              <div
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px"
+              >
+                <a
+                  id="showcase-stage-whatsapp"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-whatsapp"
+                >
+                  WhatsApp Enquiry
+                </a>
+                <a
+                  id="showcase-stage-quote"
+                  href="contact.html"
+                  class="btn btn-primary"
+                >
+                  Request Formal Quote
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+         SHOWCASE GALLERY CARDS (LARGE FORMAT SHOWROOM BROWSER)
+    ==================================================================== -->
+      <section
+        class="section section-alt"
+        aria-labelledby="showroom-grid-heading"
+      >
+        <div class="container">
+          <div class="section-header centered">
+            <span class="section-kicker">CURATED FLOOR UNITS</span>
+            <h2 class="section-title" id="showroom-grid-heading">
+              SHOWROOM EQUIPMENT FLOOR
+            </h2>
+            <p class="section-subtitle">
+              Browse through our premium tier products with instant detail
+              inspection, direct quotation requests, and WhatsApp inquiry
+              buttons.
+            </p>
+          </div>
+
+          <div class="products-grid" id="showcase-products-grid">
+            <!-- SHOWROOM CARD 1 -->
+            <!-- EDIT HERE: Replace images/products/product-01.svg with your image (e.g. /images/products/product-01.jpg) -->
+            <article class="product-card">
+              <div class="product-img-wrapper" onclick="openProductModal(1)">
+                <img
+                  src="images/products/product-01.jpg"
+                  alt="Rotary Hammer Drill"
+                  class="product-img"
+                  loading="lazy"
+                />
+                <span class="product-availability-tag in-stock">In Stock</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta-row">
+                  <span>Power Tools</span>
+                  <span aria-hidden="true">·</span>
+                  <span>APX-DRL-01</span>
+                </div>
+                <h3
+                  class="product-title"
+                  onclick="openProductModal(1)"
+                  style="cursor: pointer"
+                >
+                  Heavy Duty Rotary Hammer Drill 1100W
+                </h3>
+                <p class="product-desc">
+                  1100W motor with 3.2J impact force, vibration dampening, and
+                  SDS-Plus quick release.
+                </p>
+                <div class="product-footer-row">
+                  <span class="product-price tabular-nums">Shs.50,000</span>
+                  <span class="product-code">★ 4.9 (42 Reviews)</span>
+                </div>
+                <div class="product-actions-row">
+                  <button
+                    class="btn btn-outline btn-sm"
+                    onclick="openProductModal(1)"
+                  >
+                    View Details
+                  </button>
+                  <a
+                    href="#"
+                    class="btn btn-whatsapp btn-sm"
+                    onclick="
+                      window.open(
+                        getProductWhatsAppUrl(
+                          'Heavy Duty Rotary Hammer Drill 1100W',
+                          'APX-DRL-01',
+                          '$149.00',
+                        ),
+                        '_blank',
+                      );
+                      return false;
+                    "
+                    >WhatsApp</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- SHOWROOM CARD 2 -->
+            <article class="product-card">
+              <div class="product-img-wrapper" onclick="openProductModal(2)">
+                <img
+                  src="images/products/product-02.jpg"
+                  alt="Hima Cement"
+                  class="product-img"
+                  loading="lazy"
+                />
+                <span class="product-availability-tag in-stock">In Stock</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta-row">
+                  <span>Building Materials</span>
+                  <span aria-hidden="true">·</span>
+                  <span>APX-CEM-02</span>
+                </div>
+                <h3
+                  class="product-title"
+                  onclick="openProductModal(2)"
+                  style="cursor: pointer"
+                >
+                  Hima Cement 42.5N (50kg)
+                </h3>
+                <p class="product-desc">
+                  Structural hydraulic cement with 42.5 MPa compressive strength
+                  for commercial cast concrete.
+                </p>
+                <div class="product-footer-row">
+                  <span class="product-price tabular-nums">Shs.30,000</span>
+                  <span class="product-code">★ 4.8 (88 Reviews)</span>
+                </div>
+                <div class="product-actions-row">
+                  <button
+                    class="btn btn-outline btn-sm"
+                    onclick="openProductModal(2)"
+                  >
+                    View Details
+                  </button>
+                  <a
+                    href="#"
+                    class="btn btn-whatsapp btn-sm"
+                    onclick="
+                      window.open(
+                        getProductWhatsAppUrl(
+                          'Portland Cement 42.5N',
+                          'APX-CEM-02',
+                          '$9.50',
+                        ),
+                        '_blank',
+                      );
+                      return false;
+                    "
+                    >WhatsApp</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- SHOWROOM CARD 3 -->
+            <article class="product-card">
+              <div class="product-img-wrapper" onclick="openProductModal(3)">
+                <img
+                  src="images/products/product-03.jpg"
+                  alt="Cordless Angle Grinder"
+                  class="product-img"
+                  loading="lazy"
+                />
+                <span class="product-availability-tag in-stock">In Stock</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta-row">
+                  <span>Power Tools</span>
+                  <span aria-hidden="true">·</span>
+                  <span>APX-GRD-03</span>
+                </div>
+                <h3
+                  class="product-title"
+                  onclick="openProductModal(3)"
+                  style="cursor: pointer"
+                >
+                  Cordless Brushless Angle Grinder 20V
+                </h3>
+                <p class="product-desc">
+                  Brushless 9,000 RPM angle grinder with electronic rapid
+                  kickback brake and 125mm guard.
+                </p>
+                <div class="product-footer-row">
+                  <span class="product-price tabular-nums">Shs.50,000</span>
+                  <span class="product-code">★ 4.9 (35 Reviews)</span>
+                </div>
+                <div class="product-actions-row">
+                  <button
+                    class="btn btn-outline btn-sm"
+                    onclick="openProductModal(3)"
+                  >
+                    View Details
+                  </button>
+                  <a
+                    href="#"
+                    class="btn btn-whatsapp btn-sm"
+                    onclick="
+                      window.open(
+                        getProductWhatsAppUrl(
+                          'Cordless Angle Grinder 20V',
+                          'APX-GRD-03',
+                          '$129.00',
+                        ),
+                        '_blank',
+                      );
+                      return false;
+                    "
+                    >WhatsApp</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- SHOWROOM CARD 4 -->
+            <article class="product-card">
+              <div class="product-img-wrapper" onclick="openProductModal(4)">
+                <img
+                  src="images/products/product-04.jpg"
+                  alt="High-Tensile Rebar"
+                  class="product-img"
+                  loading="lazy"
+                />
+                <span class="product-availability-tag in-stock">In Stock</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta-row">
+                  <span>Building Materials</span>
+                  <span aria-hidden="true">·</span>
+                  <span>APX-RBR-04</span>
+                </div>
+                <h3
+                  class="product-title"
+                  onclick="openProductModal(4)"
+                  style="cursor: pointer"
+                >
+                  High-Tensile Deformed Steel Rebar
+                </h3>
+                <p class="product-desc">
+                  BS 4449 Grade 500B thermo-mechanically treated rebar for
+                  structural foundation integrity.
+                </p>
+                <div class="product-footer-row">
+                  <span class="product-price tabular-nums">Shs.20,000</span>
+                  <span class="product-code">★ 5.0 (64 Reviews)</span>
+                </div>
+                <div class="product-actions-row">
+                  <button
+                    class="btn btn-outline btn-sm"
+                    onclick="openProductModal(4)"
+                  >
+                    View Details
+                  </button>
+                  <a
+                    href="#"
+                    class="btn btn-whatsapp btn-sm"
+                    onclick="
+                      window.open(
+                        getProductWhatsAppUrl(
+                          'High-Tensile Rebar',
+                          'APX-RBR-04',
+                          '$14.80',
+                        ),
+                        '_blank',
+                      );
+                      return false;
+                    "
+                    >WhatsApp</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- SHOWROOM CARD 5 -->
+            <article class="product-card">
+              <div class="product-img-wrapper" onclick="openProductModal(7)">
+                <img
+                  src="images/products/product-07.jpg"
+                  alt="Main Distribution Board"
+                  class="product-img"
+                  loading="lazy"
+                />
+                <span class="product-availability-tag in-stock">In Stock</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta-row">
+                  <span>Electrical</span>
+                  <span aria-hidden="true">·</span>
+                  <span>APX-ELC-07</span>
+                </div>
+                <h3
+                  class="product-title"
+                  onclick="openProductModal(7)"
+                  style="cursor: pointer"
+                >
+                  Industrial Main Distribution Board (200A)
+                </h3>
+                <p class="product-desc">
+                  IP65 weatherproof electrical panel with 24-pole DIN rail slots
+                  and dual isolated neutral bars.
+                </p>
+                <div class="product-footer-row">
+                  <span class="product-price tabular-nums">Shs.100,000</span>
+                  <span class="product-code">★ 4.9 (19 Reviews)</span>
+                </div>
+                <div class="product-actions-row">
+                  <button
+                    class="btn btn-outline btn-sm"
+                    onclick="openProductModal(7)"
+                  >
+                    View Details
+                  </button>
+                  <a
+                    href="#"
+                    class="btn btn-whatsapp btn-sm"
+                    onclick="
+                      window.open(
+                        getProductWhatsAppUrl(
+                          'Main Distribution Board 200A',
+                          'APX-ELC-07',
+                          '$210.00',
+                        ),
+                        '_blank',
+                      );
+                      return false;
+                    "
+                    >WhatsApp</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- SHOWROOM CARD 6 -->
+            <article class="product-card">
+              <div class="product-img-wrapper" onclick="openProductModal(12)">
+                <img
+                  src="images/products/product-12.jpg"
+                  alt="Inverter Arc Welder"
+                  class="product-img"
+                  loading="lazy"
+                />
+                <span class="product-availability-tag in-stock">In Stock</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta-row">
+                  <span>Welding Equipment</span>
+                  <span aria-hidden="true">·</span>
+                  <span>APX-WLD-12</span>
+                </div>
+                <h3
+                  class="product-title"
+                  onclick="openProductModal(12)"
+                  style="cursor: pointer"
+                >
+                  Digital Inverter MMA Arc Welder 250A
+                </h3>
+                <p class="product-desc">
+                  Compact IGBT inverter stick welding machine with digital LED
+                  readout and anti-stick control.
+                </p>
+                <div class="product-footer-row">
+                  <span class="product-price tabular-nums">Shs.200,000</span>
+                  <span class="product-code">★ 4.9 (27 Reviews)</span>
+                </div>
+                <div class="product-actions-row">
+                  <button
+                    class="btn btn-outline btn-sm"
+                    onclick="openProductModal(12)"
+                  >
+                    View Details
+                  </button>
+                  <a
+                    href="#"
+                    class="btn btn-whatsapp btn-sm"
+                    onclick="
+                      window.open(
+                        getProductWhatsAppUrl(
+                          'Inverter Arc Welder 250A',
+                          'APX-WLD-12',
+                          '$185.00',
+                        ),
+                        '_blank',
+                      );
+                      return false;
+                    "
+                    >WhatsApp</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- NEW PRODUCT IMAGE PLACEHOLDERS: Add each image at the matching path. -->
+            <article class="product-card">
+              <div class="product-img-wrapper" onclick="openProductModal(13)">
+                <img
+                  src="images/products/product-13.jpg"
+                  alt="Screw Nails"
+                  class="product-img"
+                  loading="lazy"
+                  onerror="
+                    this.hidden = true;
+                    this.parentElement.classList.add('has-image-placeholder');
+                  "
+                />
+                <span class="product-image-placeholder" aria-hidden="true"
+                  >Add image: product-13.jpg</span
+                >
+                <span class="product-availability-tag in-stock">IN STOCK</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta-row">
+                  <span>New Product</span><span aria-hidden="true">·</span
+                  ><span>APX-NEW-13</span>
+                </div>
+                <h3
+                  class="product-title"
+                  onclick="openProductModal(13)"
+                  style="cursor: pointer"
+                >
+                  Screw Nails
+                </h3>
+                <p class="product-desc">
+                  Twist-shank nails designed to grip timber securely for
+                  construction and woodworking projects.
+                </p>
+                <div class="product-footer-row">
+                  <span class="product-price tabular-nums">Shs.1,000</span>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-img-wrapper" onclick="openProductModal(14)">
+                <img
+                  src="images/products/product-14.jpg"
+                  alt="Timber"
+                  class="product-img"
+                  loading="lazy"
+                  onerror="
+                    this.hidden = true;
+                    this.parentElement.classList.add('has-image-placeholder');
+                  "
+                />
+                <span class="product-image-placeholder" aria-hidden="true"
+                  >Add image: product-14.jpg</span
+                >
+                <span class="product-availability-tag in-stock">IN STOCK </span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta-row">
+                  <span>New Product</span><span aria-hidden="true">·</span
+                  ><span>APX-NEW-14</span>
+                </div>
+                <h3
+                  class="product-title"
+                  onclick="openProductModal(14)"
+                  style="cursor: pointer"
+                >
+                  Timber
+                </h3>
+                <p class="product-desc">
+                  Quality structural timber for framing, roofing, joinery, and
+                  general construction work.
+                </p>
+                <div class="product-footer-row">
+                  <span class="product-price tabular-nums">Shs.20,000</span>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-img-wrapper" onclick="openProductModal(15)">
+                <img
+                  src="images/products/product-15.jpg"
+                  alt="Nails"
+                  class="product-img"
+                  loading="lazy"
+                  onerror="
+                    this.hidden = true;
+                    this.parentElement.classList.add('has-image-placeholder');
+                  "
+                />
+                <span class="product-image-placeholder" aria-hidden="true"
+                  >Add image: product-15.jpg</span
+                >
+                <span class="product-availability-tag in-stock">IN STOCK</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta-row">
+                  <span>New Product</span><span aria-hidden="true">·</span
+                  ><span>APX-NEW-15</span>
+                </div>
+                <h3
+                  class="product-title"
+                  onclick="openProductModal(15)"
+                  style="cursor: pointer"
+                >
+                  Nails
+                </h3>
+                <p class="product-desc">
+                  General-purpose construction nails for fastening timber and
+                  other common building materials.
+                </p>
+                <div class="product-footer-row">
+                  <span class="product-price tabular-nums">Shs.1,000</span>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-img-wrapper" onclick="openProductModal(16)">
+                <img
+                  src="images/products/product-16.jpg"
+                  alt="Wheelbarrows"
+                  class="product-img"
+                  loading="lazy"
+                  onerror="
+                    this.hidden = true;
+                    this.parentElement.classList.add('has-image-placeholder');
+                  "
+                />
+                <span class="product-image-placeholder" aria-hidden="true"
+                  >Add image: product-16.jpg</span
+                >
+                <span class="product-availability-tag in-stock">IN STOCK</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta-row">
+                  <span>New Product</span><span aria-hidden="true">·</span
+                  ><span>APX-NEW-16</span>
+                </div>
+                <h3
+                  class="product-title"
+                  onclick="openProductModal(16)"
+                  style="cursor: pointer"
+                >
+                  Wheelbarrows
+                </h3>
+                <p class="product-desc">
+                  Heavy-duty wheelbarrows for moving building materials, soil,
+                  and equipment around the worksite.
+                </p>
+                <div class="product-footer-row">
+                  <span class="product-price tabular-nums">Shs.60,000</span>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-img-wrapper" onclick="openProductModal(17)">
+                <img
+                  src="images/products/product-17.jpg"
+                  alt="Spades"
+                  class="product-img"
+                  loading="lazy"
+                  onerror="
+                    this.hidden = true;
+                    this.parentElement.classList.add('has-image-placeholder');
+                  "
+                />
+                <span class="product-image-placeholder" aria-hidden="true"
+                  >Add image: product-17.jpg</span
+                >
+                <span class="product-availability-tag in-stock">IN STOCK</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta-row">
+                  <span>New Product</span><span aria-hidden="true">·</span
+                  ><span>APX-NEW-17</span>
+                </div>
+                <h3
+                  class="product-title"
+                  onclick="openProductModal(17)"
+                  style="cursor: pointer"
+                >
+                  Spades
+                </h3>
+                <p class="product-desc">
+                  Durable digging spades for site preparation, landscaping, and
+                  general ground work.
+                </p>
+                <div class="product-footer-row">
+                  <span class="product-price tabular-nums">Shs.30,000</span>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-img-wrapper" onclick="openProductModal(18)">
+                <img
+                  src="images/products/product-18.jpg"
+                  alt="Wire Mesh"
+                  class="product-img"
+                  loading="lazy"
+                  onerror="
+                    this.hidden = true;
+                    this.parentElement.classList.add('has-image-placeholder');
+                  "
+                />
+                <span class="product-image-placeholder" aria-hidden="true"
+                  >Add image: product-18.jpg</span
+                >
+                <span class="product-availability-tag in-stock">IN STOCK</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta-row">
+                  <span>New Product</span><span aria-hidden="true">·</span
+                  ><span>APX-NEW-18</span>
+                </div>
+                <h3
+                  class="product-title"
+                  onclick="openProductModal(18)"
+                  style="cursor: pointer"
+                >
+                  Wire Mesh
+                </h3>
+                <p class="product-desc">
+                  Welded wire mesh for concrete reinforcement, fencing, and
+                  other construction applications.
+                </p>
+                <div class="product-footer-row">
+                  <span class="product-price tabular-nums">Shs.25,000</span>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-img-wrapper" onclick="openProductModal(19)">
+                <img
+                  src="images/products/product-19.jpg"
+                  alt="Bubbled Wire"
+                  class="product-img"
+                  loading="lazy"
+                  onerror="
+                    this.hidden = true;
+                    this.parentElement.classList.add('has-image-placeholder');
+                  "
+                />
+                <span class="product-image-placeholder" aria-hidden="true"
+                  >Add image: product-19.jpg</span
+                >
+                <span class="product-availability-tag in-stock">IN STOCK</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta-row">
+                  <span>New Product</span><span aria-hidden="true">·</span
+                  ><span>APX-NEW-19</span>
+                </div>
+                <h3
+                  class="product-title"
+                  onclick="openProductModal(19)"
+                  style="cursor: pointer"
+                >
+                  Bubbled Wire
+                </h3>
+                <p class="product-desc">
+                  Durable bubbled wire for fencing and a range of construction
+                  applications.
+                </p>
+                <div class="product-footer-row">
+                  <span class="product-price tabular-nums">Shs.30,000</span>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-img-wrapper" onclick="openProductModal(20)">
+                <img
+                  src="images/products/product-20.jpg"
+                  alt="Spirit Levels"
+                  class="product-img"
+                  loading="lazy"
+                  onerror="
+                    this.hidden = true;
+                    this.parentElement.classList.add('has-image-placeholder');
+                  "
+                />
+                <span class="product-image-placeholder" aria-hidden="true"
+                  >Add image: product-20.jpg</span
+                >
+                <span class="product-availability-tag in-stock">IN STOCK</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta-row">
+                  <span>New Product</span><span aria-hidden="true">·</span
+                  ><span>APX-NEW-20</span>
+                </div>
+                <h3
+                  class="product-title"
+                  onclick="openProductModal(20)"
+                  style="cursor: pointer"
+                >
+                  Spirit Levels
+                </h3>
+                <p class="product-desc">
+                  Precision spirit levels for checking horizontal and vertical
+                  alignment on site.
+                </p>
+                <div class="product-footer-row">
+                  <span class="product-price tabular-nums">Shs.20,000</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- LIVE CONCIERGE ASSISTANCE ON WHATSAPP -->
+      <section style="background: #0f172a; color: #fff; padding: 60px 0">
+        <div class="container" style="text-align: center; max-width: 680px">
+          <span class="section-kicker" style="color: var(--color-accent)"
+            >SHOWROOM DESK</span
+          >
+          <h2 style="font-size: 2rem; margin: 10px 0 16px 0; color: #fff">
+            Need Live Video Equipment Demonstration?
+          </h2>
+          <p
+            style="
+              color: #cbd5e1;
+              font-size: 1.05rem;
+              line-height: 1.6;
+              margin-bottom: 28px;
+            "
+          >
+            Our depot engineers are on site to demonstrate tools, explain
+            connection fittings, or inspect compatibility over WhatsApp video
+            and voice.
+          </p>
+          <a href="#" class="btn btn-whatsapp btn-lg btn-whatsapp-chat"
+            >Connect with Showroom Desk</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand">
+              <img
+                src="images/logo/company-logo.png"
+                alt="Apex Hardware &amp; Construction Supplies"
+                class="brand-logo-img"
+                style="width: auto; height: 60px"
+              />
+              <a href="index.html" class="brand-name"
+                >ALPHA HARDWARE AND <br />
+                CONSTRUCTION LTD.</a
+              >
+            </div>
+
+            <p class="footer-brand-desc">
+              Certified structural building materials, heavy power tools,
+              plumbing fixtures, and construction equipment.
+            </p>
+            <div class="footer-social-links">
+              <a
+                href="#"
+                class="social-icon-link btn-whatsapp-chat"
+                title="Chat on WhatsApp"
+                aria-label="WhatsApp"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://facebook.com"
+                class="social-icon-link company-facebook-link"
+                title="Follow on Facebook"
+                aria-label="Facebook"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://tiktok.com"
+                class="social-icon-link company-tiktok-link"
+                title="Follow on TikTok"
+                aria-label="TikTok"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Quick Links</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="products.html" class="footer-link">Products</a></li>
+              <li>
+                <a href="showcase.html" class="footer-link"
+                  >The Showcase Room</a
+                >
+              </li>
+              <li><a href="services.html" class="footer-link">Services</a></li>
+              <li><a href="about.html" class="footer-link">About Us</a></li>
+              <li><a href="contact.html" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Departments</h4>
+            <ul class="footer-links-list">
+              <li>
+                <a
+                  href="products.html?category=Power%20Tools"
+                  class="footer-link"
+                  >Power Tools</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html?category=Building%20Materials"
+                  class="footer-link"
+                  >Building Materials</a
+                >
+              </li>
+              <li>
+                <a href="products.html?category=Plumbing" class="footer-link"
+                  >Plumbing &amp; Pipes</a
+                >
+              </li>
+              <li>
+                <a href="products.html?category=Electrical" class="footer-link"
+                  >Electrical Gear</a
+                >
+              </li>
+              <li>
+                <a href="products.html?category=Roofing" class="footer-link"
+                  >Roofing Systems</a
+                >
+              </li>
+              <li>
+                <a href="products.html?category=Fasteners" class="footer-link"
+                  >Fasteners &amp; Bolts</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Store &amp; Depot</h4>
+            <div class="footer-contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span class="company-address-text">[Nankonge-Nsagu]</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              <a href="tel:+18005550199" class="company-phone-text footer-link"
+                >+25652228866</a
+              >
+            </div>
+            <div class="footer-contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              <a
+                href="mailto:sales@apexhardware-supplies.com"
+                class="company-email-text footer-link"
+                >alphaharware@gmail.com</a
+              >
+            </div>
+            <div class="footer-contact-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <span class="company-hours-text">7:00am</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <div>
+            © <span class="current-year">2026</span>
+            <span class="company-name-text"
+              >Alpha Hardware and construction Ltd.</span
+            >. All Rights Reserved.
+          </div>
+          <div style="display: flex; gap: 16px">
+            <a href="about.html" class="footer-link">Terms of Supply</a>
+            <a href="contact.html" class="footer-link">Support Desk</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FLOATING QUICK ACTIONS -->
+    <div class="floating-actions-dock">
+      <button
+        class="back-to-top-btn"
+        title="Back to Top"
+        aria-label="Back to Top"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+        >
+          <path d="m18 15-6-6-6 6" />
+        </svg>
+      </button>
+      <a
+        href="#"
+        class="floating-whatsapp-btn"
+        title="Chat on WhatsApp"
+        aria-label="Chat on WhatsApp"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <!-- PRODUCT DETAIL MODAL DIALOG -->
+    <div
+      class="modal-overlay"
+      id="product-detail-modal"
+      aria-hidden="true"
+      role="dialog"
+    >
+      <div class="modal-card">
+        <button
+          class="modal-close-btn"
+          id="modal-close-btn"
+          aria-label="Close Dialog"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+        <div class="modal-media-col">
+          <img
+            id="modal-product-img"
+            src=""
+            alt="Product Detail"
+            class="modal-main-img"
+          />
+        </div>
+        <div class="modal-info-col">
+          <div class="product-meta-row">
+            <span id="modal-product-category">Category</span>
+            <span aria-hidden="true">·</span>
+            <span id="modal-product-code">Code</span>
+          </div>
+          <h2
+            id="modal-product-title"
+            style="font-size: 1.5rem; margin-bottom: 8px"
+          >
+            Product Name
+          </h2>
+          <div
+            id="modal-product-price"
+            class="product-price tabular-nums"
+            style="font-size: 1.6rem; margin-bottom: 16px"
+          >
+            $0.00
+          </div>
+          <p
+            id="modal-product-desc"
+            style="
+              color: var(--text-muted);
+              font-size: 0.95rem;
+              line-height: 1.6;
+              margin-bottom: 20px;
+            "
+          >
+            Product full description...
+          </p>
+          <h4
+            style="
+              font-size: 0.9rem;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              margin-bottom: 8px;
+            "
+          >
+            Technical Specifications
+          </h4>
+          <ul
+            id="modal-product-specs"
+            style="list-style: none; margin-bottom: 20px"
+          ></ul>
+          <h4
+            style="
+              font-size: 0.9rem;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              margin-bottom: 8px;
+            "
+          >
+            Packaging / Sizes
+          </h4>
+          <div id="modal-product-sizes" style="margin-bottom: 24px"></div>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 12px;
+              margin-top: auto;
+            "
+          >
+            <a id="modal-quote-cta" href="contact.html" class="btn btn-primary"
+              >Request Quote</a
+            >
+            <a
+              id="modal-whatsapp-cta"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-whatsapp"
+              >Ask on WhatsApp</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/showcase.js"></script>
+  </body>
+</html>

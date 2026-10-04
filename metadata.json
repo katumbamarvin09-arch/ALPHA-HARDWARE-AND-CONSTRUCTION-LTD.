@@ -1,0 +1,6 @@
+{
+  "name": "Apex Hardware & Construction Supplies",
+  "description": "Professional hardware, building materials, tools, and construction supplies web application with interactive showcase, product catalog, quote builder, and WhatsApp integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
