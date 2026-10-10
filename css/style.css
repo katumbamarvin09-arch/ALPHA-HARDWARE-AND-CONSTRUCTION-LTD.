@@ -264,6 +264,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
 }
 
+.brand-name {
+  font-size: 0.78rem;
+  line-height: 1.2;
+}
+
 /* Main Desktop Navigation */
 .main-nav {
   display: flex;
@@ -1139,6 +1144,18 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 0;
+}
+
+.showcase-stage-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.showcase-stage-actions .btn {
+  white-space: normal;
+  text-align: center;
 }
 
 .showcase-spec-list {
@@ -1675,10 +1692,38 @@ h1, h2, h3, h4, h5, h6 {
   gap: 48px;
 }
 
+.catalog-results-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.quote-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .contact-info-cards {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  min-width: 0;
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
 }
 
 .contact-info-item {
@@ -1996,16 +2041,33 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: 1fr 1fr;
   }
   .showcase-stage-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .showcase-stage-actions {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .showcase-stage-media {
+    min-width: 0;
   }
   .contact-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .about-story-grid,
+  .mission-vision-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .mission-vision-grid > div {
+    padding: 24px !important;
   }
 }
 
 @media (max-width: 820px) {
   .main-nav {
     display: none; /* Switch to hamburger drawer */
+  }
+  .header-inner {
+    gap: 12px;
   }
   .menu-toggle {
     display: flex;
@@ -2019,18 +2081,83 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 600px) {
+  :root {
+    --header-height: 60px;
+  }
+  .site-header {
+    padding: 10px 0;
+  }
   .container {
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .brand-link {
+    flex: 1 1 auto;
+    min-width: 0;
+    gap: 6px;
+  }
+  .brand {
+    min-width: 0;
+    gap: 6px;
+  }
+  .brand-logo-img {
+    height: 40px;
+    width: 40px;
+    flex: 0 0 40px;
+    object-fit: contain;
+  }
+  .brand-name {
+    min-width: 0;
+    font-size: 0.68rem;
+    line-height: 1.15;
+  }
+  .header-actions {
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .icon-btn,
+  .menu-toggle {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+  }
+  .mobile-drawer {
+    padding: 16px 20px;
+    gap: 8px;
+    max-height: calc(100vh - var(--header-height));
+    max-height: calc(100dvh - var(--header-height));
+    overflow-y: auto;
+  }
+  .mobile-nav-link {
+    padding: 10px 0;
+    font-size: 1rem;
   }
   .section {
     padding: 48px 0;
   }
   .section-header {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: clamp(1.65rem, 7vw, 2.1rem);
+  }
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  .catalog-results-bar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .catalog-results-bar .btn,
+  .quote-actions .btn {
+    width: 100%;
+  }
+  .quote-actions {
+    width: 100%;
+    flex-direction: column;
   }
   .header-inner {
-    gap: 10px;
+    gap: 8px;
   }
   .header-actions {
     gap: 8px;
@@ -2051,7 +2178,13 @@ h1, h2, h3, h4, h5, h6 {
     flex-basis: 82vw;
   }
   .product-actions-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .product-actions-row .btn {
+    padding: 10px 8px;
+    font-size: 0.72rem;
+    letter-spacing: 0;
+    white-space: normal;
   }
   .products-grid {
     grid-template-columns: minmax(0, 1fr);
@@ -2060,9 +2193,17 @@ h1, h2, h3, h4, h5, h6 {
   .product-body {
     padding: 16px;
   }
+  .form-box {
+    padding: 22px 18px;
+  }
+  .form-input,
+  .form-select,
+  .form-textarea {
+    font-size: 16px;
+  }
   .showcase-stage-card {
-    gap: 20px;
-    padding: 18px;
+    gap: 16px;
+    padding: 16px;
   }
   .showcase-dept-tabs {
     width: 100%;
@@ -2084,6 +2225,74 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
   .hero-carousel-container {
-    min-height: 520px;
+    height: min(620px, calc(100vh - var(--header-height)));
+    height: min(620px, calc(100svh - var(--header-height)));
+    min-height: 460px;
+    max-height: none;
+  }
+  .hero-content {
+    padding-top: 16px;
+    padding-bottom: 36px;
+  }
+  .hero-pretitle {
+    font-size: 0.72rem;
+    letter-spacing: 2px;
+  }
+  .hero-title {
+    font-size: clamp(2rem, 9vw, 2.75rem);
+    margin-bottom: 16px;
+  }
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 24px;
+  }
+  .hero-btn-group {
+    gap: 10px;
+  }
+  .hero-btn-group .btn {
+    padding: 10px 14px;
+    font-size: 0.82rem;
+    white-space: normal;
+  }
+  .hero-indicators {
+    bottom: 16px;
+  }
+  .floating-actions-dock {
+    right: 14px;
+    bottom: max(14px, env(safe-area-inset-bottom));
+    gap: 8px;
+  }
+  .floating-whatsapp-btn {
+    width: 50px;
+    height: 50px;
+  }
+  .back-to-top-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .header-inner {
+    gap: 6px;
+  }
+  .header-actions {
+    gap: 4px;
+  }
+  .icon-btn,
+  .menu-toggle {
+    width: 36px;
+    height: 36px;
+  }
+  .hero-title {
+    font-size: clamp(1.9rem, 10vw, 2.3rem);
+  }
+  .hero-btn-group .btn {
+    padding: 9px 10px;
+    font-size: 0.76rem;
   }
 }
