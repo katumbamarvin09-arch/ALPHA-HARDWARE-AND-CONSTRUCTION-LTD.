@@ -3,23 +3,25 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
 
+const rootDir = import.meta.dirname;
+
 export default defineConfig(() => {
   return {
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve(rootDir, '.'),
       },
     },
     build: {
       rollupOptions: {
         input: {
-          main: path.resolve(__dirname, 'index.html'),
-          products: path.resolve(__dirname, 'products.html'),
-          showcase: path.resolve(__dirname, 'showcase.html'),
-          services: path.resolve(__dirname, 'services.html'),
-          about: path.resolve(__dirname, 'about.html'),
-          contact: path.resolve(__dirname, 'contact.html'),
+          main: path.resolve(rootDir, 'index.html'),
+          products: path.resolve(rootDir, 'products.html'),
+          showcase: path.resolve(rootDir, 'showcase.html'),
+          services: path.resolve(rootDir, 'services.html'),
+          about: path.resolve(rootDir, 'about.html'),
+          contact: path.resolve(rootDir, 'contact.html'),
         },
       },
     },
@@ -32,4 +34,3 @@ export default defineConfig(() => {
     },
   };
 });
-
